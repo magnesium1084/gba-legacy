@@ -1,5 +1,8 @@
 const toggleState = 1;
-
+localStorage.setItem("isNet", JSON.stringify(0));
+localStorage.setItem("isCheck", JSON.stringify(0));
+localStorage.setItem("is1Check", JSON.stringify(0));
+console.log(localStorage.getItem("isNet"), localStorage.getItem("isCheck"), localStorage.getItem("is1Check"));
 function themeValue(toggleState) {
     if (toggleState == 1) {
         document.documentElement.setAttribute('data-theme', 'light');

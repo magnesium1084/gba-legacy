@@ -44,7 +44,7 @@ if (isNet == 0) {
             checkType = 2;
         }
         if (gameCoreType == "nds"){
-            checkType = 3;
+            checkType = 4;
         }
     }
     if (isCheck == 2) {
@@ -60,19 +60,19 @@ if (isNet == 0) {
    
     if (checkType == 1) {
     gameName = gameText;
-    let gameLink = "https://endpoint.i10.repl.co/gba-alt/" + gameName + ".gba";
+    let gameLink = "../gba-host/gba-alt/" + gameName + ".gba";
     gameName = gameLink;
     console.log("gba-server");
     }
     if (checkType == 2) {
     gameName = gameText;
-    let gameLink = "https://endpoint.i10.repl.co/nes-alt/" + gameName + ".nes.zip";
+    let gameLink = "../gba-host/nes-alt/" + gameName + ".nes.zip";
     gameName = gameLink;
     console.log("nes-server");
     }
     if (checkType == 3) {
     gameName = gameText;
-    let gameLink = "https://nds-host.nailington1.repl.co/?url=https://rawcdn.githack.com/mathadventure1/nds-host/0a9e47d73741eed5a1129535d1cb027ead56b027/nds-alt/" + gameName + ".zip";
+    let gameLink = "https://rawcdn.githack.com/mathadventure1/nds-host/0a9e47d73741eed5a1129535d1cb027ead56b027/nds-alt/" + gameName + ".zip";
     gameName = gameLink;
     console.log("nds-server");
     isCheck = 0;
@@ -133,10 +133,4 @@ if (custType == 3) {
     let gameLink = custHost + "n64-alt/" + gameName + ".7z";
     gameName = gameLink;
     console.log(gameLink);
-}
-
-let isDistrict = localStorage.getItem("district");
-if (isDistrict == "1") {
-    gameName += "?palmbeach.k12.fl.us";
-    console.log(gameName);
 }
