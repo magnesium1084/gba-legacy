@@ -17,7 +17,7 @@ let urlsToCache = [
     './nes.html',
     './nesindex.html',
     './offline.html',
-    './reccomendations.html',
+    './recomendations.html',
     './romindex.html',
     './segamd.html',
     './settings.html',
